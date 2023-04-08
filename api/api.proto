@@ -1,0 +1,20 @@
+syntax = "proto3";
+package api;
+
+option go_package = "./;api";
+
+service ConfigService {
+  rpc ListHarbors (HarborRequest) returns (HarborResponse){}
+}
+
+message HarborRequest {}
+
+message HarborResponse{
+  repeated Harbor data = 1;
+}
+
+message Harbor{
+  int64 Id = 1; // id of the harbor
+  string Name = 2; // chinese name of the harbor
+  string EnName = 3; // english name of the harbor
+}

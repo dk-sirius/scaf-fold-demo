@@ -1,0 +1,55 @@
+Model:
+  - Dsn: 'postgres://postgres:sg_work!!!@192.168.1.38:5432/commodity?sslmode=disable'
+    Table:
+      t_category: Category
+      t_item: Item
+      t_item_operation_log: ItemVersion
+      t_property: Property
+      t_property_config: PropertyConfig
+      t_property_config_enum_relation: PropertyConfigEnumRelation
+      t_property_enum: PropertyEnum
+      t_property_value: PropertyValue
+      t_sku: Sku
+      t_sku_inventory: SkuInventory
+      t_sku_inventory_log: SkuInventoryLog
+      t_sku_inventory_relation: SkuInventoryRelation
+      t_spu: Spu
+  - Dsn: 'postgres://postgres:sg_work!!!@192.168.1.38:5432/sale-plateform?sslmode=disable'
+    Table:
+      t_ship_performance_info: ShipPerformanceInfo
+      t_ship_performance_goods: ShipPerformanceGoods
+  #  - Dsn: 'postgres://easygo:qxLx$ydFg$kJ@pgm-bp19751l0f17f8m7.pg.rds.aliyuncs.com:5432/sinotransbooking'
+  - Dsn: 'postgres://postgres:sg_work!!!@192.168.1.38:5432/sinotransbooking'
+    Table:
+      t_performance_info: PerformanceInfo
+      t_performance_goods_info: PerformanceGoods
+      t_route: Route
+      t_performance_action_log: ActionLog
+      t_performance_attachment: Attachment
+      t_performance_node: Node
+      t_route_harbor: Harbor
+      t_shipping_company_code: CompanyCode
+      t_shipping_conditions: ShippingConditions
+      t_shipping_schedule: ShippingSchedule
+      t_surcharge_detail_template: DetailTemplate
+      t_surcharge_template: SurchargeTemplate
+      t_bail: Bail
+      t_commission: Commission
+      t_content_map: ContentMap
+      t_whitelist: Whitelist
+
+  - Dsn: 'postgres://postgres:sg_work!!!@192.168.1.38:5432/customer?sslmode=disable'
+    Table:
+      t_enterprise: Enterprise
+  - Dsn: 'postgres://postgres:sg_work!!!@192.168.1.38:5432/configcenter?sslmode=disable'
+    Table:
+      t_address: Address
+      t_harbour: Harbour
+      t_route_group: RouteGroup
+      t_railway_company: RailwayCompany
+      t_box_type: BoxyType
+      t_port_city: PortCity
+
+
+
+
